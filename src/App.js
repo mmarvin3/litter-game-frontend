@@ -8,8 +8,18 @@ import Loggedin from './components/Loggedin/LoggedIn';
 import Camera from './components/Camera/Camera';
 import Picture from './components/Picture/Picture';
 
+import { auth } from "./services/firebase";
+import { useState, useEffect } from "react";
+
 function App() {
+
+  const [ user, setUser ] = useState(null);
+  useEffect(() => {
+    auth.onAuthStateChanged(user => setUser(user));
+  }, []);
+
   return (
+
     <div>
       <Header/>
       <Route exact path='/'>
@@ -27,7 +37,6 @@ function App() {
       <Route exact path='/picture'>
         <Picture></Picture>
       </Route>
-    </div>
   )
 }
 
