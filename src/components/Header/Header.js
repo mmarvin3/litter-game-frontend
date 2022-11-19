@@ -1,14 +1,24 @@
-import { Link } from "react-router-dom";
 import React from "react";
+import { Link } from "react-router-dom";
+import { login, logout } from "../../services/firebase";
 
-function Header() {
-    return (
-        <div>
-            <Link to='/'>
-                CleanUp Crew
-            </Link>
-        </div>
-    )
+function Header(props) {
+  return (
+    <header>
+      <Link to="/">
+        <h1>CleanUp Crew</h1>
+      </Link>
+      <nav class="App-nav">
+        <ul>
+          {props.user ? (
+            <li onClick={logout}>Logout</li>
+          ) : (
+            <li onClick={login}>Login</li>
+          )}
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
 export default Header;

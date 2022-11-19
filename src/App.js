@@ -1,15 +1,23 @@
+// Styling
 import "./App.css";
-import Home from "./components/Home/Home";
-import Header from "./components/Header/Header";
+
+// Dependencies
 import React from "react";
 import { Route } from "react-router-dom";
-import Login from "./components/Login/Login";
-import Loggedin from "./components/Loggedin/LoggedIn";
-import Camera from "./components/Camera/Camera";
-import Picture from "./components/Picture/Picture";
 
+// Firebase Services
 import { auth } from "./services/firebase";
 import { useState, useEffect } from "react";
+
+// Components
+import Header from "./components/Header/Header";
+
+// Pages
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login";
+import Loggedin from "./pages/Loggedin/LoggedIn";
+import Camera from "./pages/Camera/Camera";
+import Picture from "./pages/Picture/Picture";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -18,26 +26,26 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Header />
+    <div className="App">
+      <Header user={user} />
 
       <Route exact path="/">
         <Home />
       </Route>
 
-      <Route exact path="/login">
+      <Route path="/login">
         <Login />
       </Route>
 
-      <Route exact path="/loggedin">
+      <Route path="/loggedin">
         <Loggedin />
       </Route>
 
-      <Route exact path="/camera">
+      <Route path="/camera">
         <Camera />
       </Route>
 
-      <Route exact path="/picture">
+      <Route path="/picture">
         <Picture></Picture>
       </Route>
     </div>
