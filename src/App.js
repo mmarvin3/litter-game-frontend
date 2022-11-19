@@ -46,7 +46,7 @@ function App() {
       </Route>
 
       <Route path="/picture">
-        <Picture></Picture>
+        <Picture />
       </Route>
     </div>
   );

@@ -1,0 +1,31 @@
+.App-header {
+  background-color: #004643;
+  min-height: 20vh;
+  font-size: calc(10px + 2vmin);
+  color: #e8e4e6;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-header h1 {
+  color: #e8e4e6;
+}
+
+.App-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.App-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.App-nav li {
+  cursor: pointer;
+  margin-right: 1.5rem;
+}

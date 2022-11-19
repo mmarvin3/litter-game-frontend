@@ -1,10 +1,11 @@
+import "../Header/Header.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import { login, logout } from "../../services/firebase";
 
 function Header(props) {
   return (
-    <header>
+    <header class="App-header">
       <Link to="/">
         <h1>CleanUp Crew</h1>
       </Link>
