@@ -4,3 +4,12 @@ body {
   background: #001e1d;
   color: #e8e4e6;
 }
+
+/* @media (max-width: 480px) {
+  body {
+    box-sizing: border-box;
+    margin: 0;
+    background: #001e1d;
+    color: #e8e4e6;
+  }
+} */
