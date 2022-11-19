@@ -19,6 +19,11 @@ import Loggedin from "./pages/Loggedin/LoggedIn";
 import Camera from "./pages/Camera/Camera";
 import Picture from "./pages/Picture/Picture";
 import Timer from "./pages/Timer/Timer";
+import Summary from "./pages/Summary/Summary";
+import SecondCamera from "./pages/SecondCamera/SecondCamera";
+import AfterPicture from "./pages/AfterPicture/AfterPicture";
+import SliderScreen from "./pages/SliderScreen/SliderScreen";
+import Leaderboard from "./pages/Leaderboard/Leaderboard";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -27,7 +32,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div class="App">
       <Header user={user} />
 
       <Route exact path="/">
@@ -52,6 +57,26 @@ function App() {
 
       <Route path="/timer">
         <Timer/>
+      </Route>
+
+      <Route path='/secondcamera'>
+        <SecondCamera/>
+      </Route>
+
+      <Route path='/afterpicture'>
+        <AfterPicture/>
+      </Route>
+
+      <Route path='/sliderscreen'>
+        <SliderScreen/>
+      </Route>
+
+      <Route path='/summary'>
+        <Summary/>
+      </Route>
+
+      <Route path='/leaderboard'>
+        <Leaderboard/>
       </Route>
       
     </div>

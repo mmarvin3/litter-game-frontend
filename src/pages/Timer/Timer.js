@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import reactRouterDom from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Timer() {
     const [time, setTime] = useState(0)
@@ -45,7 +46,7 @@ function Timer() {
                 )}
             </div>
             <div>
-                <Link to='Summary'>
+                <Link to='/secondcamera'>
                     <button>Done Cleaning</button>
                 </Link>
             </div>
