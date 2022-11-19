@@ -5,7 +5,9 @@ function Picture() {
         <div>
             <h2>Keep this picture retake?</h2>
             <button>Retake</button>
-            <button>Keep</button>
+            <Link to ='/timer'>
+                <button>Keep</button>
+            </Link>
         </div>
     )
 }

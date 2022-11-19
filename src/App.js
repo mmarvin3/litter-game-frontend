@@ -18,6 +18,7 @@ import Login from "./pages/Login/Login";
 import Loggedin from "./pages/Loggedin/LoggedIn";
 import Camera from "./pages/Camera/Camera";
 import Picture from "./pages/Picture/Picture";
+import Timer from "./pages/Timer/Timer";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -48,6 +49,11 @@ function App() {
       <Route path="/picture">
         <Picture />
       </Route>
+
+      <Route path="/timer">
+        <Timer/>
+      </Route>
+      
     </div>
   );
 }
