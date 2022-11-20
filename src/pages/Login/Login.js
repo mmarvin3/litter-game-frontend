@@ -33,12 +33,13 @@ function Login(props) {
       </button>
       <br/><br/>
       <img
-        src="https://media.istockphoto.com/id/187953515/vector/polluted-planet.jpg?s=612x612&w=0&k=20&c=CXV8my72fPFVuduP9fqTtntS0BiQVMG0clwYmJ1QMZY="
-        alt="polluted-earth" width="300px"
+        src="https://i.gyazo.com/4225085289429b911622e806f70b1ed7.png"
+        alt="polluted-earth" width="300px" height="300px"
       />
       <br />
       <br />
-      <img src="https://www.news.ucsb.edu/sites/default/files/styles/article_horizontal/public/images/2022/climate-change-earth-uc-santa-barbara.jpg?itok=qiU0U6Zt" alt="earth" width="300px"/>
+      <img src="https://i.gyazo.com/64337d8def4bf89bc0a2e2883b8d32ea.png" alt="earth" width="300px" height="350px"
+      />
     </div>
   );
 }
