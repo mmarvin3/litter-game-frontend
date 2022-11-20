@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 import { login, logout } from "../../services/firebase";
 
 function Header(props) {
+  const photoStyles = {
+    borderRadius: "50%",
+    height: "2.5rem",
+    margin: "0 0.5rem",
+  };
+
   return (
     <header class="App-header">
       <button>
@@ -16,20 +22,22 @@ function Header(props) {
 
       <nav class="App-nav">
         <ul>
-          {props.user ? (
-            <li onClick={logout} id="logout">
-              <img
-                src="https://www.pngfind.com/pngs/m/676-6764065_default-profile-picture-transparent-hd-png-download.png"
-                alt="profile-picture"
-                width="40px"
-                height="40px"
-              />
-              <br />
-              <small>Logout</small>
-            </li>
-          ) : (
-            <li onClick={login}>Login</li>
-          )}
+          {
+            props.user ? (
+              <>
+                <li id="welcome">{/*Welcome, {props.user.displayName}*/}
+                  <img 
+                    src={props.user.photoURL} 
+                    alt={props.user.displayName}
+                    style={photoStyles}
+                  />
+                </li>
+                <li onClick={logout} id="logout">Logout</li>
+              </>
+              ) : (
+                <li onClick={login}>Login</li>
+              )
+          }
         </ul>
       </nav>
     </header>

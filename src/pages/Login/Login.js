@@ -8,7 +8,14 @@ function Login(props) {
     <div class="login-page">
       <h1>Welcome to CleanUp Crew</h1>
 
-      <button id="login" onClick={login}>
+      {
+        props.user ? (
+          <button id="login"><Link to="/loggedin">Click here to continue</Link></button>
+        ) : (
+          <strong><button id="login" onClick={login}>Login with Google</button></strong>
+        )
+      }
+      {/* <button id="login" onClick={login}>
         {
           props.user ? (
               <Link to="/loggedin">Click here to continue</Link>
@@ -16,7 +23,7 @@ function Login(props) {
             <strong>Login with Google</strong>
           )
         }
-      </button>
+      </button> */}
 
       <br />
       <br />
