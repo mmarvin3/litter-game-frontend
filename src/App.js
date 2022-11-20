@@ -40,7 +40,7 @@ function App() {
       </Route>
 
       <Route path="/login">
-        <Login />
+        <Login user={user} />
       </Route>
 
       <Route path="/loggedin">

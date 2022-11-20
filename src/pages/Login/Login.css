@@ -1,3 +1,28 @@
 .login-page {
   text-align: center;
+  padding: 20px;
+}
+
+
+.login-page button {
+  padding: 10px;
+  border-radius: 20px;
+  width: 200px;
+  font-size: 16px;
+}
+
+.login-page #login {
+  background-color: #F9BC60;
+  color: #001E1D;
+}
+.login-page #login:active {
+  background-color: #FFA629;
+}
+
+.login-page #guest {
+  background-color: #E8E4E6;
+  color: #001E1D;
+}
+.login-page #guest:active {
+  background-color: #ACAAAB;
 }
