@@ -1,14 +1,15 @@
+import "./Loggedin.css";
 import { Link } from "react-router-dom";
 
 function Loggedin() {
     return (
-        <div>
+        <div class="loggedin">
             <h2>Click the Camera Icon Take a Pic and Start a Timer</h2>
-                <Link to='/camera'>
+            <Link to='/camera'>
                 <button>Camera</button>
-                </Link>
+            </Link>
             <h2>Don't want to take a pic? Just start a CleanUp Timer</h2>
-                <button>Timer</button>
+            <button>Timer</button>
         </div>
     )
 }
