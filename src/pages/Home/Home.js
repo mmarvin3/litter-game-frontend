@@ -4,21 +4,19 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div class="home">
-      <h1>Welcome to CleanUp Crew</h1>
-
-      <br/>
-      
+      <h1>Welcome to CleanUp Crew!</h1>
       <h4>Pick up litter to brighten your community.</h4>
       <h4>See your impact for a brighter world.</h4>
 
-      <button>
-          <Link to="/login">Login to Continue</Link>
+      <button id="login">
+          <strong><Link to="/login">Login to Continue</Link></strong>
       </button>
 
       <br />
       <br />
-      <button>
-        Explore as Guest
+
+      <button id="guest">
+        <strong>Explore as Guest</strong>
       </button>
     </div>
   );
