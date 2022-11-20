@@ -26,12 +26,12 @@ function Login(props) {
       </button>
       <br/><br/>
       <img
-        src="../../../public/assets/images/polluted_earth.jpg"
-        alt="polluted-earth"
+        src="https://media.istockphoto.com/id/187953515/vector/polluted-planet.jpg?s=612x612&w=0&k=20&c=CXV8my72fPFVuduP9fqTtntS0BiQVMG0clwYmJ1QMZY="
+        alt="polluted-earth" width="300px"
       />
       <br />
       <br />
-      <img src="../../../public/assets/images/clean_earth.png" alt="earth" />
+      <img src="https://www.news.ucsb.edu/sites/default/files/styles/article_horizontal/public/images/2022/climate-change-earth-uc-santa-barbara.jpg?itok=qiU0U6Zt" alt="earth" width="300px"/>
     </div>
   );
 }

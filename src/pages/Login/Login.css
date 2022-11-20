@@ -3,6 +3,9 @@
   padding: 20px;
 }
 
+.login-page img {
+  border-radius: 50px;
+}
 
 .login-page button {
   padding: 10px;

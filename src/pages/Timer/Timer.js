@@ -34,13 +34,13 @@ function Timer() {
             <br/>
             <div id="timer-buttons">
                 <div id="start-button">
-                    {!timerOn && time == 0 && (
+                    {!timerOn && time === 0 && (
                         <button onClick={() => setTimeOn(true)}>Start Timer</button>
                     )}
                     {timerOn && (
                         <button onClick={() => setTimeOn(false)}>Pause</button>
                     )}
-                    {!timerOn && time != 0 && (
+                    {!timerOn && time !== 0 && (
                         <button onClick={() => setTimeOn(true)}>Resume</button>
                     )}
                     {!timerOn && time > 0 && (
