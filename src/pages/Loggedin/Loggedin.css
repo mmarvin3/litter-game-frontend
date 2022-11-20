@@ -5,12 +5,12 @@
     align-items: center;
 }
 
-h2 {
+.loggedin h2 {
     text-align: center;
     padding: 20px;
 }
 
-button {
+.loggedin button {
     text-align: center;
     border-radius: 50px;
     height: 100px;

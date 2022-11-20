@@ -1,0 +1,22 @@
+.picture {
+    text-align: center;
+    padding: 20px;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.picture button {
+    border-radius: 50px;
+    width: 100px;
+    padding: 10px;
+}
