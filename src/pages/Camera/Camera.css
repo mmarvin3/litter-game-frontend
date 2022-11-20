@@ -1,0 +1,13 @@
+.camera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.camera button {
+    margin-top: 50%;
+}
