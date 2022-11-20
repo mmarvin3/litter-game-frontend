@@ -9,7 +9,9 @@ function Loggedin() {
                 <button>Camera</button>
             </Link>
             <h2>Don't want to take a pic? Just start a CleanUp Timer</h2>
+            <Link to='/timer'>
             <button>Timer</button>
+            </Link>
         </div>
     )
 }

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import "../Camera/Camera.css"
 
 function SecondCamera(){
     return(
         <div>
-            <Link to='/afterpicture'>
+            <Link className="camera" to='/afterpicture'>
             <button>Camera</button>
             </Link>
             <h2>Take an After picture!</h2>

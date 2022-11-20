@@ -1,15 +1,18 @@
 import { Link } from "react-router-dom";
+import "../Picture/Picture.css"
 
 function AfterPicture() {
     return (
-        <div>
-            <h2>Keep this picture retake?</h2>
-            <Link to='/secondcamera'>
-                <button>Retake</button>
-            </Link>
-            <Link to='/sliderscreen'>
-                <button>Keep</button>
-            </Link>
+        <div className="picture">
+            <h2>Keep this picture?</h2>
+            <div id="buttons">
+                <Link to='/secondcamera'>
+                    <button>Retake</button>
+                </Link>
+                <Link to='/sliderscreen'>
+                    <button id="keep">Keep</button>
+                </Link>
+            </div>
         </div>
     )
 }
