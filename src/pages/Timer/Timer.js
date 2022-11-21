@@ -26,12 +26,14 @@ function Timer() {
     return (
         <div className="Timer">
             <h1>Ready to start your CleanUp?</h1>
-            <div id="time">
-                <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
-                <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}</span>
-                {/* <span>{("0" + ((time / 10) % 100)).slice(-2)}</span> */}
+            <div className="timer-circle">
+                <div id="time">
+                    <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+                    <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}</span>
+                    {/* <span>{("0" + ((time / 10) % 100)).slice(-2)}</span> */}
+                </div>
             </div>
-            <br/>
+            <br />
             <div id="timer-buttons">
                 <div id="start-button">
                     {!timerOn && time === 0 && (

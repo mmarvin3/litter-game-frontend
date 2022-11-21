@@ -1,4 +1,14 @@
 #view-leaderboard-button {
     width: 150px;
     background: #F9BC60;
+    margin-top: 30px;
+}
+
+#summary-background {
+    height: 488px;
+    background: linear-gradient(180deg, #ABD1C6 29.22%, #004643 295.3%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    color: black;
+    padding: 20px;
 }

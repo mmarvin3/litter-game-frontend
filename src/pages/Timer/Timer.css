@@ -16,6 +16,24 @@
 
 #time {
     font-size: 48px;
+    text-align: center;
+    background: #004643;
+    border-radius: 3px;
+    width: 163px;
+    height: 70px;
+    color: #e8e4e6;
+    font-family: "Mulish", sons-serif;
+}
+
+.timer-circle {
+    width: 247px;
+    height: 236px;
+    border-radius: 150px;
+    background: #E8E4E6;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
 }
 
 #timer-buttons {
@@ -23,7 +41,7 @@
 }
 
 #done {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 #done button {
     font-size: 28px;

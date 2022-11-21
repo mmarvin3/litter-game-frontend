@@ -20,7 +20,7 @@
     font-family: "Mulish", sons-serif;
 }
 
-.timer-circle {
+#timer-circle {
     width: 166px;
     height: 158.45px;
     border-radius: 100px;

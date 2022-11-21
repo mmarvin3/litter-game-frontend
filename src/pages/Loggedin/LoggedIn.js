@@ -11,7 +11,7 @@ function Loggedin() {
             </Link>
             <h2>Don't want to take a pic? Just start a CleanUp Timer</h2>
             <Link to='/timer'>
-                <div className="timer-circle">
+                <div id="timer-circle">
                     <button>00:00</button>
                 </div>
             </Link>

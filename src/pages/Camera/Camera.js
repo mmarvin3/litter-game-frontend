@@ -7,7 +7,7 @@ function Camera(){
             <Link to='/picture'>
                 <button>Capture</button>
             </Link>
-            <h2>Take a before pic</h2>
+            <h2>Take a Before Pic!</h2>
             <p>Position the camera to show your cleanup spot. When ready, click the circle to capture the photo.</p>
         </div>
     )
