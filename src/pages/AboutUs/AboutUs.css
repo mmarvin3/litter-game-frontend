@@ -1,0 +1,16 @@
+.About {
+    text-align: center;
+}
+
+.About img {
+    border-radius: 20px;
+}
+
+.About ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style: none;
+}

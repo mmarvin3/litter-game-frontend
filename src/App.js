@@ -11,6 +11,7 @@ import { useState, useEffect } from "react";
 
 // Components
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 // Pages
 import Home from "./pages/Home/Home";
@@ -24,6 +25,7 @@ import SecondCamera from "./pages/SecondCamera/SecondCamera";
 import AfterPicture from "./pages/AfterPicture/AfterPicture";
 import SliderScreen from "./pages/SliderScreen/SliderScreen";
 import Leaderboard from "./pages/Leaderboard/Leaderboard";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -40,6 +42,7 @@ function App() {
 
       <Route exact path="/">
         <Home />
+        <Footer/>
       </Route>
 
       <Route path="/login">
@@ -80,8 +83,12 @@ function App() {
 
       <Route path='/leaderboard'>
         <Leaderboard/>
+        <Footer />
       </Route>
       
+      <Route path="/about">
+        <AboutUs />
+      </Route>
     </div>
   );
 }
