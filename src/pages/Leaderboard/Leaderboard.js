@@ -1,8 +1,9 @@
 // import { Link } from "react-router-dom";
+import "../Picture/Picture.css"
 
 function Leaderboard() {
     return (
-       <div>
+       <div className="picture">
            <h1>CleanUp Leaderboard</h1>
        </div> 
     )

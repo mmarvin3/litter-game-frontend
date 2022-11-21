@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import "../Picture/Picture.css"
+import "../Summary/Summary.css"
 
 function Summary() {
     return(
-        <div>
+        <div className="picture">
             <h1>CleanUp Complete!</h1>
             <h2>
                 CleanUp Summary:
@@ -10,7 +12,7 @@ function Summary() {
                 CleanUp Points earned: 250
             </h2>
             <Link to='leaderboard'>
-            <button>View Leaderboard</button>
+            <button id="view-leaderboard-button">View Leaderboard</button>
             </Link>
         </div>
     )
